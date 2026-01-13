@@ -1,37 +1,26 @@
-# .github/workflows/ci.yml
-name: Java CI/CD
+name: Java CI
 
-# Run on push or PR to main branch
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # 1️⃣ Checkout the repo
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2️⃣ Set up Java
       - name: Set up Java
         uses: actions/setup-java@v3
         with:
-          distribution: 'temurin'
+          distribution: temurin
           java-version: '17'
 
-      # 3️⃣ Build project
-      - name: Build with Maven
-        run: mvn clean install
-
-      # 4️⃣ Run tests
-      - name: Run tests
-<<<<<<< HEAD
-        run: mvn test
-=======
-        run: mvn test
->>>>>>> f082005196824f483aa0f12ce06413d09af2f927
+      - name: Build and test with Maven
+        run: mvn clean test
