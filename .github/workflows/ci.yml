@@ -30,4 +30,8 @@ jobs:
 
       # 4️⃣ Run tests
       - name: Run tests
+<<<<<<< HEAD
         run: mvn test
+=======
+        run: mvn test
+>>>>>>> f082005196824f483aa0f12ce06413d09af2f927
