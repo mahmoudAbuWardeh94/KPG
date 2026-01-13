@@ -21,6 +21,9 @@ public class Base {
 				WebDriverManager.chromedriver().setup();
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--remote-allow-origins=*");
+				options.addArguments("--headless=new");
+				options.addArguments("--no-sandbox");
+				options.addArguments("--disable-dev-shm-usage");
 
 				driver = new ChromeDriver(options);
 				System.out.println("🚀 Running tests on Chrome");
@@ -35,6 +38,9 @@ public class Base {
 			}
 
 			driver.manage().window().maximize();
+			
+			
+			
 		}
 	}
 
