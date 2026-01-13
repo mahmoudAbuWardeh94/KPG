@@ -23,15 +23,28 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/MahmoudAbuWardeh/.m2/repository/org/seleniumhq/selenium/selenium-api/4.10.0/selenium-api-4.10.0.jar" sourcepath="C:/Users/MahmoudAbuWardeh/.m2/repository/org/seleniumhq/selenium/selenium-api/4.10.0/selenium-api-4.10.0-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/MahmoudAbuWardeh/.p2/pool/plugins/org.testng_7.11.0.r202503091654.jar" sourcepath="C:/Users/MahmoudAbuWardeh/.p2/pool/plugins/org.testng.source_7.11.0.r202503091654.jar"/>
+	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="maven.groupId" value="org.seleniumhq.selenium"/>
-			<attribute name="maven.artifactId" value="selenium-api"/>
-			<attribute name="maven.version" value="4.10.0"/>
-			<attribute name="maven.scope" value="compile"/>
+			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/Users/MahmoudAbuWardeh/.p2/pool/plugins/org.testng_7.11.0.r202503091654.jar" sourcepath="C:/Users/MahmoudAbuWardeh/.p2/pool/plugins/org.testng.source_7.11.0.r202503091654.jar"/>
+	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="test" value="true"/>
+			<attribute name="optional" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/MahmoudAbuWardeh/.p2/pool/plugins/org.junit_4.13.2.v20240929-1000.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="http://junit.sourceforge.net/junit3.8.1/javadoc/"/>
+		</attributes>
+		<accessrules>
+			<accessrule kind="accessible" pattern="junit/"/>
+			<accessrule kind="nonaccessible" pattern="**/*"/>
+		</accessrules>
+	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

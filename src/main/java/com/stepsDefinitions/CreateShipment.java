@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.asserts.SoftAssert;
 
 import com.base.Base;
-import com.pages.Login;
 import com.pages.Shipment;
 
 import io.cucumber.java.en.And;
@@ -21,7 +20,7 @@ public class CreateShipment {
 		this.shipment = new Shipment(driver);
 
 		Thread.sleep(4000);
-		driver.navigate().to("");
+		driver.navigate().to("https://uat-kpg.gnteq.app/#/gnconnect/shipment-new");
 		Thread.sleep(2000);
 
 		boolean shipperName = shipment.shipperNameIsDisplayed();
