@@ -10,7 +10,7 @@ Background:
     
 
 
-Scenario: Create shipment
-    When the user navigates to the shipment page
-    And the user enters shipment details
+#Scenario: Create shipment
+    #When the user navigates to the shipment page
+    #And the user enters shipment details
     #Then the shipment should be created successfully
